@@ -132,23 +132,23 @@ options = (
 )
 
 correct_answers = (
-    "d) def function_name() {}",   
-    "b) 12",                    
-    "b) 6", 
-    "d) real",                
-    "b) To stop the execution of a loop entirely",   
-    "a) strlen()",                
-    "a) Prints `4`",             
-    "a) dict = {\"name\": \"John\", \"age\": 30}",   
-    "c) 13",                      
-    "a) lambda",               
-    "a) def func(*args):",    
-    "c) It prints `[1, 2, 3, 4, 5, 6]`",  
-    "d) character",               
-    "b) `Hello World`",         
-    "a) class MyClass:",       
-    "a) `5`",                    
-    "a) try",                     
+    "d",   
+    "b",                    
+    "b", 
+    "d",                
+    "b",   
+    "a",                
+    "a",             
+    "a",   
+    "c",                      
+    "a",                
+    "a",    
+    "c",  
+    "d",                
+    "b",         
+    "a",       
+    "a",                    
+    "a",                     
 )
 
 guesses = []
@@ -158,24 +158,23 @@ q_n = 0
 for q in questions:
     print("------------------------------------------------------------------------------------------")
     print(q[0])  
-    
-    
+
     for opt in options[q_n]:
         for line in opt.split("\n"):
             print(line)   
-    guess = input("Enter the correct option (a.)(b.)(c.)(d.): ").lower()
+
+    guess = input("Enter the correct option (a.)(b.)(c.)(d.): ").lower().strip()  # Normalize the guess
     guesses.append(guess)
     
-     
-    if guess == correct_answers[q_n].lower():
+  
+    
+    if guess == correct_answers[q_n]:
         score += 1
         print("Correct!")
     else:
         print("Incorrect!")
         print(f"The correct answer was: {correct_answers[q_n]}")
     
-    
     q_n += 1
 
- 
 print(f"Your total score is: {score}/{len(questions)}")
