@@ -134,7 +134,7 @@ options = (
 correct_answers = (
     "d",   
     "b",                    
-    "b", 
+    "a", 
     "d",                
     "b",   
     "a",                
