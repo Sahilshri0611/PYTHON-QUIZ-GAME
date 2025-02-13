@@ -1,0 +1,20 @@
+-----PRE REQUISITES----
+1) WHAT ARE TUPLES?
+-> A tuple has different types of data types stored under it in parenthesis, it is immutable -> that means it doesn't allow the changes once it is created, it allows duplicates, also these are ordered. 
+index -> 0 to n-1
+
+2) WHAT ARE LISTS?
+-> A list too has different types of data types stored under it in square braces, it is mutable -> that means it allow the changes once it is created, it allows duplicates, also these are ordered. 
+index -> 0 to n-1
+
+the code is based on python using list and tuples with for loop and conditional statements to create an environment of quiz game.
+here the questions are based on c language moderate questions
+
+
+in the question tuple you can make changes by adding the questions that you want in your quiz
+also according to the questions you can change the answers and options tuples too.
+
+-----------thank you-------------
+
+
+ 
